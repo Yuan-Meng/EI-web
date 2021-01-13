@@ -9,18 +9,18 @@ const RY_G = "https://test-ry-one.netlify.app/";
 const GY_R = "https://test-gy-one.netlify.app/";
 
 // Links to two choices for each puzzle
-const p1_a = "https://www.dropbox.com/s/pby074l0mh1ukd0/puzzle1a.png?dl=1";
-const p1_b = "https://www.dropbox.com/s/pz14i2qrk0rgiff/puzzle1b.png?dl=1";
-const p2_a = "https://www.dropbox.com/s/x6n8n3e5q4fgmo1/puzzle2a.png?dl=1";
-const p2_b = "https://www.dropbox.com/s/gropbqqc534p9sg/puzzle2b.png?dl=1";
-const p3_a = "https://www.dropbox.com/s/12xc42aqv94dwwb/puzzle3a.png?dl=1";
-const p3_b = "https://www.dropbox.com/s/aeyul5qi5vjvnpu/puzzle3b.png?dl=1";
-const p4_a = "https://www.dropbox.com/s/dtjbibgjchik0bm/puzzle4a.png?dl=1";
-const p4_b = "https://www.dropbox.com/s/6qzxrtc9uxcdubp/puzzle4b.png?dl=1";
-const p5_a = "https://www.dropbox.com/s/4e68esix151oxgh/puzzle5a.png?dl=1";
-const p5_b = "https://www.dropbox.com/s/eda5u4vqmwy5cvo/puzzle5b.png?dl=1";
-const p6_a = "https://www.dropbox.com/s/r2e4pwhqeuwq98r/puzzle6a.png?dl=1";
-const p6_b = "https://www.dropbox.com/s/sfscsrgqa9bwzxy/puzzle6b.png?dl=1";
+const p1_a = "https://www.dropbox.com/s/pby074l0mh1ukd0/puzzle1a.png?raw=1";
+const p1_b = "https://www.dropbox.com/s/pz14i2qrk0rgiff/puzzle1b.png?raw=1";
+const p2_a = "https://www.dropbox.com/s/x6n8n3e5q4fgmo1/puzzle2a.png?raw=1";
+const p2_b = "https://www.dropbox.com/s/gropbqqc534p9sg/puzzle2b.png?raw=1";
+const p3_a = "https://www.dropbox.com/s/12xc42aqv94dwwb/puzzle3a.png?raw=1";
+const p3_b = "https://www.dropbox.com/s/aeyul5qi5vjvnpu/puzzle3b.png?raw=1";
+const p4_a = "https://www.dropbox.com/s/dtjbibgjchik0bm/puzzle4a.png?raw=1";
+const p4_b = "https://www.dropbox.com/s/6qzxrtc9uxcdubp/puzzle4b.png?raw=1";
+const p5_a = "https://www.dropbox.com/s/4e68esix151oxgh/puzzle5a.png?raw=1";
+const p5_b = "https://www.dropbox.com/s/eda5u4vqmwy5cvo/puzzle5b.png?raw=1";
+const p6_a = "https://www.dropbox.com/s/r2e4pwhqeuwq98r/puzzle6a.png?raw=1";
+const p6_b = "https://www.dropbox.com/s/sfscsrgqa9bwzxy/puzzle6b.png?raw=1";
 
 // Choose a structure to use in each puzzle
 function randomChoice(arr) {
