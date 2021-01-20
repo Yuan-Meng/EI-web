@@ -1,4 +1,4 @@
-// Links to structures that appear in the puzzles
+// Unique structures in all puzzles
 const YGR = "https://test-ygr.netlify.app/";
 const cY = "https://test-cy.netlify.app/";
 const YRG = "https://test-yrg.netlify.app/";
@@ -8,7 +8,7 @@ const eY = "https://test-ey.netlify.app/";
 const RY_G = "https://test-ry-one.netlify.app/";
 const GY_R = "https://test-gy-one.netlify.app/";
 
-// Links to two choices for each puzzle
+// Two choices in each puzzle
 const p1_a = "https://www.dropbox.com/s/pby074l0mh1ukd0/puzzle1a.png?raw=1";
 const p1_b = "https://www.dropbox.com/s/pz14i2qrk0rgiff/puzzle1b.png?raw=1";
 const p2_a = "https://www.dropbox.com/s/x6n8n3e5q4fgmo1/puzzle2a.png?raw=1";
@@ -22,12 +22,12 @@ const p5_b = "https://www.dropbox.com/s/eda5u4vqmwy5cvo/puzzle5b.png?raw=1";
 const p6_a = "https://www.dropbox.com/s/r2e4pwhqeuwq98r/puzzle6a.png?raw=1";
 const p6_b = "https://www.dropbox.com/s/sfscsrgqa9bwzxy/puzzle6b.png?raw=1";
 
-// Choose a structure to use in each puzzle
+// Function for making random choices
 function randomChoice(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-// Each puzzle is a single URL
+// Randomly select a correct structure in each puzzle
 var p1 = randomChoice([YGR, cY]);
 var p2 = randomChoice([YRG, cY]);
 var p3 = randomChoice([YGR, GR_Y]);
@@ -35,7 +35,7 @@ var p4 = randomChoice([YRG, RG_Y]);
 var p5 = randomChoice([eY, RY_G]);
 var p6 = randomChoice([eY, GY_R]);
 
-// Shuffle two choices in each puzzle
+// Function for shuffling an array
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -55,7 +55,7 @@ function shuffle(array) {
   return array;
 }
 
-// Each puzzle has two possible structures
+// Shuffle two choices in each puzzle
 var c1 = shuffle([p1_a, p1_b]);
 var c2 = shuffle([p2_a, p2_b]);
 var c3 = shuffle([p3_a, p3_b]);
@@ -63,7 +63,7 @@ var c4 = shuffle([p4_a, p4_b]);
 var c5 = shuffle([p5_a, p5_b]);
 var c6 = shuffle([p6_a, p6_b]);
 
-// Shuffle puzzles and choices the same way
+// Function for shuffling two arrays the same way
 function coshuffle(obj1, obj2) {
   var index = obj1.length;
   var rnd, tmp1, tmp2;
@@ -82,7 +82,7 @@ function coshuffle(obj1, obj2) {
   return [obj1, obj2];
 }
 
-// Shuffle within each group of puzzles and choices
+// Shuffle puzzles and choices within each group 
 var puzzles1 = [p1, p3, p5];
 var choices1 = [c1, c3, c5];
 var group1 = coshuffle(puzzles1, choices1);
@@ -95,7 +95,7 @@ var group2 = coshuffle(puzzles2, choices2);
 var new_puzzles2 = group2[0];
 var new_choices2 = group2[1];
 
-// Shuffle between 2 groups of puzzles and choices
+// Shuffle puzzles and choices between 2 groups
 var all_puzzles = [new_puzzles1, new_puzzles2];
 var all_choices = [new_choices1, new_choices2];
 var both_groups = coshuffle(all_puzzles, all_choices);
